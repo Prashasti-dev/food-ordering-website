@@ -1,0 +1,194 @@
+/* src/pages/Contact.css */
+
+.contact-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fffdf6;
+  color: #333;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: #1e3932;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+/* Testimonials */
+.testimonial-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #dcbc7d;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonial-section h2 {
+  font-size: 2.2rem;
+  color: #2f4858;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.04);
+}
+
+.testimonial-card span {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Advertisement */
+.advertisement-section {
+ background-image: url("thali.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.ad-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+  color: #b9520d;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.ad-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 1.4s ease-out;
+  color: #0c0c01;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.order-button {
+  background-color: #ff6600;
+  justify-items: center;
+  color: #e3edea;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  animation: fadeIn 1.8s ease-out;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #e37c50;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .testimonial-section h2,
+  .ad-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .order-button {
+    padding: 10px 24px;
+  }
+}
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.back-button {
+  background-color: #ff6600;
+  justify-items: center;
+  color: #e3edea;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  animation: fadeIn 1.8s ease-out;
+  transition: background-color 0.3s ease;
+}
+
+.back-button {
+  background-color: #ff6600;
+  color: #fff;
+}
+
