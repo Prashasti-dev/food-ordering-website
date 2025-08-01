@@ -32,24 +32,4 @@ This is my mini project — a simple and clean **Food Ordering Website** made us
 - **Password:** 123456
 
 
- 📁 How to Run the Project Locally
 
-1. Clone this GitHub repository:
-```bash
-git clone https://github.com/Prashasti-dev/food-ordering-website.git
-2 .Navigate to the project folder:
-
-bash
-Copy code
-cd food-ordering-website
-Install the required dependencies:
-
-bash
-Copy code
-npm install
-Start the app:
-
-bash
-Copy code
-npm start
-Open http://localhost:3000 in your browser to see it live.
