@@ -26,29 +26,25 @@ function Navbar({ cartCount, isLoggedIn, setIsLoggedIn }) {
       <div className="logo">🍴 FoodieFi</div>
 
       <div className="nav-icons">
-        {isLoggedIn && (
-          <>
-            <Link to="/">
-              <FaHome className="icon" title="Home" />
-            </Link>
+        <Link to="/">
+          <FaHome className="icon" title="Home" />
+        </Link>
 
-            <Link to="/cart" style={{ position: "relative" }}>
-              <FaShoppingCart
-                className={`icon ${animate ? "bump" : ""}`}
-                title="Cart"
-              />
-              {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-            </Link>
+        <Link to="/cart" style={{ position: "relative" }}>
+          <FaShoppingCart
+            className={`icon ${animate ? "bump" : ""}`}
+            title="Cart"
+          />
+          {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+        </Link>
 
-            <Link to="/contact">
-              <FaPhone className="icon" title="Contact Us" />
-            </Link>
+        <Link to="/contact">
+          <FaPhone className="icon" title="Contact Us" />
+        </Link>
 
-            <FiLogOut className="icon" title="Logout" onClick={handleLogout} />
-          </>
-        )}
-
-        {!isLoggedIn && (
+        {isLoggedIn ? (
+          <FiLogOut className="icon" title="Logout" onClick={handleLogout} />
+        ) : (
           <Link to="/login">
             <FaUser className="icon" title="Login" />
           </Link>

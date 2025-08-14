@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import getAllProducts from "../api/getAllProducts";
 import HeroBanner from "../components/HeroBanner";
+import Footer from "../components/Footer"; 
 import "./Home.css";
 
 function Home({ onAddToCart, cartItems = [] }) {
@@ -75,7 +76,6 @@ function Home({ onAddToCart, cartItems = [] }) {
             <option value="North Indian">North Indian</option>
             <option value="Japanese">Japanese</option>
             <option value="Chinese">Chinese</option>
-            {/* Add more as needed */}
           </select>
 
           <select onChange={(e) => setCookTime(e.target.value)} value={cookTime}>
@@ -158,6 +158,8 @@ function Home({ onAddToCart, cartItems = [] }) {
           </div>
         )}
       </div>
+
+      <Footer />
     </div>
   );
 }

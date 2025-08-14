@@ -11,7 +11,7 @@ const Login = ({ setIsLoggedIn }) => {
     e.preventDefault();
 
     // Simple hardcoded login credentials
-    if (email === "p@gmail.com" && password === "123456") {
+    if (email === "test@gmail.com" && password === "852963") {
       alert("Login successful!");
       setIsLoggedIn(true);        // ✅ Set login state
       navigate("/");              // ✅ Redirect to home

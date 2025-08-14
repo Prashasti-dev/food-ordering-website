@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import Contact from "./pages/Contact";
 import FinalCheckout from "./pages/FinalCheckout";
 
+
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -57,16 +59,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         
-        <Route
-          path="/"
-          element={
-            isLoggedIn ? (
-              <Home onAddToCart={handleAddToCart} cartItems={cartItems} />
-            ) : (
-              <Navigate to="/login" />
-            )
-          }
-        />
+     <Route
+  path="/"
+  element={<Home onAddToCart={handleAddToCart} cartItems={cartItems} />}
+/>
 
         <Route
           path="/cart"
@@ -94,7 +90,9 @@ function App() {
             )
           }
         />
+        
       </Routes>
+    
     </Router>
   );
 }

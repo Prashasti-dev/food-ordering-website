@@ -36,14 +36,14 @@
 
 .login-form-container h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #ff6600;
 }
 
 .login-form-container input {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  width: 92%;
+  padding: 15px;
+  margin: 10px 2px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
