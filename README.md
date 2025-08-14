@@ -28,8 +28,8 @@ This is my mini project — a simple and clean **Food Ordering Website** made us
 
 ## 🔐 Test Login Credentials
 
-- **Username:** p@gmail.com
-- **Password:** 123456
+- **Username:** test@gmail.com
+- **Password:** 852963
 
 
 
